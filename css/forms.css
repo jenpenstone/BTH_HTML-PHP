@@ -1,0 +1,141 @@
+/**
+ * Styling for forms.
+ */
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border-radius: 5px;
+    margin: 2em;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Styling for access (login/logout) form */
+input[type=text] {
+    width: 25%;
+    margin: 10px 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: block;
+}
+
+input[type=password] {
+    width: 25%;
+    margin: 10px 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: block;
+}
+
+input[type=submit] {
+    min-width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 2em;
+    display: block;
+    background-color: #919191;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Search page style */
+
+#search-field {
+    width: 50%;
+    padding: 0.5em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+.preview {
+    border: 2px solid #404040;
+    border-radius: 5px;
+    background-color: #919191;
+    font-size: 0.8em;
+    margin: 2em;
+    padding: 0.5em;
+    width: 40%;
+    min-height: 15em;
+    display: inline-block;
+}
+
+.preview img {
+    width: 5em;
+    min-width: 5em;
+    display: inline-block;
+    clear: both;
+}
+
+.preview a {
+    margin-left: 1em;
+}
+
+/* moves every second preview to the right to create even spaces between them */
+.preview:nth-child(even) {
+    float: right;
+}
+
+.previewText {
+    display: inline;
+    float: right;
+}
+
+.preview p {
+    display: inline;
+}
+
+/* Style access forms */
+.accessField {
+    width: 50em;
+    margin: auto;
+}
+
+.access {
+    padding: 1em;
+}
+
+
+/**
+ * responsive
+ */
+
+@media (max-width: 980px) {
+    .accessField {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .preview {
+        margin: 0.5em;
+        padding: 0.5em;
+        width: 100%;
+    }
+
+    /* moves every second preview to the right to create even spaces between them */
+    .preview:nth-child(even) {
+        float: left;
+    }
+
+    input[type=text] {
+        width: 75%;
+    }
+
+    input[type=password] {
+        width: 75%;
+    }
+
+    #search-field {
+        width: 75%;
+        font-size: 1em;
+    }
+}

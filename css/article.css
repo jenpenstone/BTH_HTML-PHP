@@ -1,0 +1,146 @@
+/**
+ * Styling for footers.
+ */
+article {
+    min-height: 30em;
+    width: 80%;
+    border: 3px solid #eee;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #e6e6e6;
+}
+
+.content {
+    margin: 5em;
+}
+
+article img {
+    min-width: 20em;
+    margin: 0 auto;
+}
+
+.align-center {
+    text-align: center;
+}
+
+article h2 {
+    margin: 1em 0;
+}
+
+article p {
+    margin: 1em 0;
+}
+
+.artiklar {
+    padding: 1em;
+    background-color: #9ba685;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.artiklar header {
+    border: none;
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+
+.artiklar p {
+    padding: 0.5em;
+}
+
+
+.artiklar li {
+    margin-left: 5em;
+}
+
+
+.imagetext {
+    font-style: italic;
+}
+
+/* Styling for quotes */
+.quote {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.mapImage {
+    width: 80%;
+    min-height: 30em;
+    margin: 1em;
+}
+
+.smallImage {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.smallImage img {
+    min-width: 1em;
+    width: 10em;
+}
+
+.navButtons {
+    margin: 2em;
+    text-align: center;
+    padding: 1em;
+    background-color: #919191;
+    border-radius: 5px;
+}
+
+.navButtons a {
+    padding: 0.5em;
+    background-color: #e6e6e6;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 1em;
+    border: 2px solid #404040;
+    border-radius: 3px;
+}
+
+article footer {
+    margin-top: 2em;
+    background-color: #919191;
+    padding: 1em;
+    clear: both;
+}
+
+
+
+/**
+ * responsive
+ */
+@media (max-width: 980px) {
+    article {
+        width: 90%;
+    }
+
+    article img {
+        width: 80%;
+        min-width: 2em;
+        margin: 0 auto;
+    }
+
+    .mapImage {
+        width: 80%;
+        min-height: 3em;
+        margin: 1em;
+    }
+
+    .navButtons a {
+        margin: 0.5em;
+    }
+
+
+    article footer {
+        margin-top: 1em;
+        clear: both;
+    }
+}
